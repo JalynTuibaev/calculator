@@ -36,6 +36,14 @@
     height: 70px;
 }
 
+.calculator__buttons:hover {
+    background-color: rgba(100, 100, 255, 0.82);
+}
+
+.calculator__buttons:active {
+    background-color: rgba(46, 53, 134, 0.82);
+}
+
 .last {
     width: 100%;
 }
