@@ -12,7 +12,7 @@ const reducer = (state = initialState, action) => {
 
     if (action.type === 'SUM') {
         if (state.sum === null) {
-            return {...state, sum: null}
+            return {...state, sum: null};
         }
         try {
             const total = eval(state.sum);
@@ -24,13 +24,13 @@ const reducer = (state = initialState, action) => {
 
     if (action.type === 'DELETE_LAST') {
         if (state.sum === null) {
-            return {...state, sum: null}
+            return {...state, sum: null};
         }
         return {...state, sum: state.sum.slice(0, -1)}
     }
 
     if (action.type === 'DELETE_ALL') {
-        return {...state, sum: null}
+        return {...state, sum: null};
     }
 
     return state;
